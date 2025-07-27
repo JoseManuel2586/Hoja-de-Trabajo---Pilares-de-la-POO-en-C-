@@ -16,7 +16,6 @@ namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico3
                 Console.WriteLine("La cantidad debe ser mayor que cero.");
                 return;
             }
-
             if (productos.ContainsKey(nombre.ToLower()))
             {
                 productos[nombre.ToLower()] += cantidad;
