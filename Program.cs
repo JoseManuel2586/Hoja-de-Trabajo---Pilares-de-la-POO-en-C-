@@ -1,6 +1,7 @@
 ﻿using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Clases;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio2;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio4;
+using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio5;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico3;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico4;
 
@@ -79,6 +80,14 @@ namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_
                 v.Conducir();
             }
 
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+
+            Escuela escuela = new Escuela();
+
+            escuela.AgregarPersona(new Estudiante { Nombre = "Carlos" });
+            escuela.AgregarPersona(new Maestro { Nombre = "Lic. Juárez" });
+
+            escuela.MostrarPerfiles();
 
 
             Console.ReadLine();
