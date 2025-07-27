@@ -2,6 +2,7 @@
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio2;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio4;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio5;
+using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio6;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico3;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico4;
 
@@ -89,6 +90,16 @@ namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_
 
             escuela.MostrarPerfiles();
 
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+
+
+            GestorDocumentos gestor = new GestorDocumentos();
+
+            gestor.AgregarDocumento(new Factura { Numero = "F001" });
+            gestor.AgregarDocumento(new NotaCredito { Numero = "NC002" });
+            gestor.AgregarDocumento(new NotaDebito { Numero = "ND003" });
+
+            gestor.GenerarReportes();
 
             Console.ReadLine();
         }
