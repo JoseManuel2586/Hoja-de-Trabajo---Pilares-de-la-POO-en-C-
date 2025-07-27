@@ -1,6 +1,8 @@
 ﻿using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Clases;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio2;
+using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercicio4;
 using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico3;
+using Hoja_de_Trabajo___Pilares_de_la_POO_en_C_.Ejercico4;
 
 namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_
 {
@@ -62,10 +64,24 @@ namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_
             inventarioProductos.RetirarProducto("Pantalon", 100);
             inventarioProductos.AgregarProducto("Zapatos", -5);
 
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
+
+            List<Vehiculo> vehiculos = new List<Vehiculo>
+        {
+            new Carro { Modelo = "Toyota" },
+            new Motocicleta { Modelo = "Yamaha" }
+        };
+
+            Console.WriteLine("--- Encendiendo y conduciendo vehículos ---");
+            foreach (var v in vehiculos)
+            {
+                v.Encender();
+                v.Conducir();
+            }
+
+
 
             Console.ReadLine();
         }
-
-
     }
 }
