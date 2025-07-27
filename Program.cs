@@ -48,7 +48,6 @@ namespace Hoja_de_Trabajo___Pilares_de_la_POO_en_C_
             
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
 
-
             Inventario inventarioProductos = new Inventario();
 
             inventarioProductos.AgregarProducto("Pantalon", 50);
